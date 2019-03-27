@@ -38,7 +38,7 @@ public class Grid extends GridPane {
 						GridPane.setHalignment(sign, HPos.CENTER);
 						GridPane.setValignment(sign, VPos.CENTER);
 						turn++;
-						whoTurn= (turn % 2 == 0) ? "X" : "O";
+						whoTurn= "X";
 					} else {
 						Text sign = CellArray[innerRow][innerCol].drawO();
 
@@ -46,7 +46,7 @@ public class Grid extends GridPane {
 						GridPane.setHalignment(sign, HPos.CENTER);
 						GridPane.setValignment(sign, VPos.CENTER);
 						turn++;
-						whoTurn = (turn % 2 == 0) ? "X" : "O";
+						whoTurn = "O";
 					}
 				});
 

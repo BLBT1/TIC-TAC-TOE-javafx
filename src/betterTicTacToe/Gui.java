@@ -47,20 +47,20 @@ public class Gui {
 		hbox.setSpacing(10);
 		hbox.setStyle("-fx-background-color: #336699;");
 
-		Text round = new Text(border.getTurn() + "'s turn");
-		round.setFont(Font.font("Comic Sans MS", 50));
+//		Text round = new Text(border.getTurn() + "'s turn");
+//		round.setFont(Font.font("Comic Sans MS", 50));
 
 		Text title = new Text("Tic Tac Toe");
-		title.setFont(Font.font("Comic Sans MS", 50));
-		hbox.setSpacing(10);
+		title.setFont(Font.font("Comic Sans MS", 75));
+		hbox.setSpacing(20);
 
 		// Setting the margin to the nodes
-		hbox.setMargin(round, new Insets(20, 20, 20, 20));
-		hbox.setMargin(title, new Insets(20, 20, 50, 50));
+//		hbox.setMargin(round, new Insets(20, 20, 20, 20));
+	//hbox.setMargin(title, new Insets(10, 20, 50, 50));
 
 		// retrieving the observable list of the HBox
 		ObservableList list = hbox.getChildren();
-		list.addAll(title, round);
+		list.addAll(title);
 		return hbox;
 	}
 //	public 
