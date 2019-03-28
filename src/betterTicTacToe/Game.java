@@ -18,7 +18,11 @@ public class Game extends Application {
 		
 	}
 	
+/*	public void stop() {
+		
+	}
 	
+	*/
 	
 	
 	
