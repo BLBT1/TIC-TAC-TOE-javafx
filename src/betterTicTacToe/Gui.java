@@ -18,15 +18,15 @@ public class Gui {
 	private Stage primarystage;
 	private Button[] buttonArray;
 	Grid border;
-	private boolean gameOver=false;
-	// BorderPane b;
+	private boolean gameOver = false;
+//	BorderPane b;
 
 	public Gui(Stage primaryStage, int width, int height) {
 		this.width = width;
 		this.height = height;
 		this.primarystage = primaryStage;
 		border = new Grid();
-		gameOver();
+		// gameOver();
 	}
 
 	public void setStage(Stage primaryStage) throws Exception {
@@ -73,20 +73,21 @@ public class Gui {
 		StackPane endingPane = new StackPane();
 		Text endingText = new Text(" Game is over!");
 		endingText.setFont(Font.font("Comic Sans MS", 200));
-		 endingPane.setMargin(endingText, new Insets(50, 50, 50, 50));
+		endingPane.setMargin(endingText, new Insets(50, 50, 50, 50));
 		Scene endingScene = new Scene(endingPane);
 		primaryStage.setScene(endingScene);
 
 	}
 
-	public void gameOver() {
-	//	return border.getIsOver();
-		if(border.getIsOver()) {
-			System.out.println("over");
-		
-		gameOver = border.getIsOver();
-	}}
-   public boolean gameOver1() {
-	   return gameOver;
-   }
+	/*
+	 * public void gameOver() { // return border.getIsOver(); if(border.getIsOver())
+	 * { System.out.println("over");
+	 * 
+	 * gameOver = border.getIsOver(); }}
+	 * 
+	 */
+	/*
+	 * public boolean gameOver1() { if(border.getIsOver()) {
+	 * System.out.println("over");} return border.getIsOver(); }
+	 */
 }

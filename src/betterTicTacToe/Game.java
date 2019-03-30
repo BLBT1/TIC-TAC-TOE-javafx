@@ -14,9 +14,10 @@ public class Game extends Application {
 	public void start(Stage primaryStage) throws Exception {
 		Gui gui = new Gui(primaryStage, 800, 600);
 		gui.setStage(primaryStage);
-		if (gui.gameOver1()) {
-			gui.switchToOver(primaryStage);
-		}
+		//if (gui.gameOver1()) {
+			//gui.switchToOver(primaryStage);
+	//		stop();
+	//	}
 
 	}
 
